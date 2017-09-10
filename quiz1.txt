@@ -1,0 +1,30 @@
+1) If the distance between two point charges is tripled, the mutual force between them will be changed by what factor?
+
+a. 9.0
+b. 3.0
+c. 0.33
+d. 1/9
+
+2) If the size of the charge value is tripled for both of two point charges maintained at a constant separation, the mutual force between them will be changed by what factor?
+
+a. 9.0
+b. 3.0
+c. 0.33
+d. 1/9
+
+
+3) The constant $k_e$, which appears in Coulomb’s law formula, is equivalent dimensionally to which of the following?
+
+a. $N \times m/C$
+b. $N/C$
+c. $N \times m^2/C^2$
+d. $N/C^2$
+
+
+4) Two equal charges, each $Q$, are separated by some distance. What third charge would need to be placed half way between the two charges so that the net force on each charge would be zero?
+
+a. -Q
+b. -Q/2
+c. -Q/4
+d. -Q/8
+

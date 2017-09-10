@@ -67,8 +67,8 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 *
 */
 /*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -1163,7 +1163,6 @@ a:focus {
   text-decoration: underline;
 }
 a:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -2592,7 +2591,6 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -3083,7 +3081,6 @@ select[multiple].input-lg {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -8814,6 +8811,9 @@ body > #header .header-bar {
     margin-left: 10px;
   }
 }
+[dir="rtl"] #ipython_notebook {
+  float: right !important;
+}
 #noscript {
   width: auto;
   padding-top: 16px;
@@ -9016,8 +9016,14 @@ span#login_widget > .button .badge,
  *
  * Author: Jupyter Development Team
  */
+[dir="rtl"] #tabs li {
+  float: right;
+}
 ul#tabs {
   margin-bottom: 4px;
+}
+[dir="rtl"] ul#tabs {
+  margin-right: 0px;
 }
 ul#tabs a {
   padding-top: 6px;
@@ -9040,6 +9046,16 @@ ul.breadcrumb span {
 }
 .list_toolbar .tree-buttons {
   padding-top: 1px;
+}
+[dir="rtl"] .list_toolbar .tree-buttons {
+  float: left !important;
+}
+[dir="rtl"] .list_toolbar .pull-right {
+  padding-top: 1px;
+  float: left !important;
+}
+[dir="rtl"] .list_toolbar .pull-left {
+  float: right !important;
 }
 .dynamic-buttons {
   padding-top: 3px;
@@ -9176,6 +9192,9 @@ ul.breadcrumb span {
 #tree-selector {
   padding-right: 0px;
 }
+[dir="rtl"] #tree-selector a {
+  float: right;
+}
 #button-select-all {
   min-width: 50px;
 }
@@ -9265,6 +9284,9 @@ ul#new-menu {
   left: auto;
   right: 0;
 }
+[dir="rtl"] #new-menu {
+  text-align: right;
+}
 .kernel-menu-icon {
   padding-right: 12px;
   width: 24px;
@@ -9309,6 +9331,9 @@ ul#new-menu {
 }
 #running .panel-group .panel .panel-body .list_container .list_item:last-child {
   border-bottom: 0px;
+}
+[dir="rtl"] #running .col-sm-8 {
+  float: right !important;
 }
 .delete-button {
   display: none;
@@ -9605,6 +9630,7 @@ div.cell.selected.jupyter-soft-selected {
   }
 }
 div.inner_cell {
+  min-width: 0;
   /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -9625,11 +9651,6 @@ div.inner_cell {
   box-flex: 1;
   /* Modern browsers */
   flex: 1;
-}
-@-moz-document url-prefix() {
-  div.inner_cell {
-    overflow-x: hidden;
-  }
 }
 /* input_area and input_prompt must match in top border and margin for alignment */
 div.input_area {
@@ -11300,7 +11321,7 @@ div#pager .ui-resizable-handle::after {
 }
 .shortcut_key {
   display: inline-block;
-  width: 20ex;
+  width: 21ex;
   text-align: right;
   font-family: monospace;
 }
@@ -11612,6 +11633,7 @@ ul.typeahead-list > li > a {
   box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
 }
 .terminal-app .terminal {
+  width: 100%;
   float: left;
   font-family: monospace;
   color: white;
@@ -11625,6 +11647,9 @@ ul.typeahead-list > li > a {
 .terminal-app .terminal dummy-screen {
   line-height: 1em;
   font-size: 14px;
+}
+.terminal-app .terminal .xterm-rows {
+  padding: 10px;
 }
 .terminal-app .terminal-cursor {
   color: black;
@@ -11685,8 +11710,10 @@ ul.typeahead-list > li > a {
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
 .highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
 .highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
 .highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
 .highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
 .highlight .s2 { color: #BA2121 } /* Literal.String.Double */
 .highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
@@ -11697,9 +11724,11 @@ ul.typeahead-list > li > a {
 .highlight .s1 { color: #BA2121 } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
@@ -11856,7 +11885,9 @@ a.anchor-link {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[1]:</div>
+<div class="output_area">
+<div class="prompt output_prompt">Out[1]:</div>
+
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <script>
@@ -11893,308 +11924,6 @@ a.anchor-link {
 <li><p><a href="http://manuelpm.me/phys2401/#/">http://manuelpm.me/phys2401/#/</a></p>
 </li>
 </ul>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Chapter-25-27">Chapter 25-27<a class="anchor-link" href="#Chapter-25-27">&#182;</a></h2><ul>
-<li>Electric Potential and Capacitors</li>
-<li>Current and Circuits</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>In a certain region of space, the electric field is zero.
-From this fact, what can you conclude about the elec-
-tric potential in this region?</p>
-<ol>
-<li>It is zero</li>
-<li>It does not vary with position</li>
-<li>It is positive</li>
-<li>It is negative</li>
-<li>None of those answer is necessarily true</li>
-</ol>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong> It does not vary with position</strong></p>
-$$ \vec E =  - \vec \nabla V$$<p>so if 
-$$E_x = 0 = \frac{d V}{d x} =0 $$</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The unit of capacitance, the farad, is dimensionally equivalent to which of the following?</p>
-<ol>
-<li>V/C</li>
-<li>V $\cdot$ C</li>
-<li>J/V</li>
-<li>C/V</li>
-</ol>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-$$C \equiv \frac{Q}{V}$$<p>The capacitance depends only on the geometry of the conductors and
-not on an external source of charge or potential difference</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>A fully charged parallel-plate capacitor remains connected to a battery while you slide a dielectric between the plates. Do the following quantities (a) increase, (b) decrease, or (c) stay the same?</p>
-<ol>
-<li>C</li>
-<li>Q</li>
-<li>V</li>
-<li>Energy stored in the capacitor</li>
-</ol>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>A fully charged parallel-plate capacitor remains connected to a battery while you slide a dielectric between the plates. Do the following quantities (a) increase, (b) decrease, or (c) stay the same?</p>
-<ol>
-<li>C. <strong>Increases</strong>. $C = \kappa \, C_0$</li>
-<li>Q. <strong>Increases</strong>. C increases and V is constant</li>
-<li>V. <strong>Constant</strong></li>
-<li>Energy stored in the capacitor. <strong>Increases</strong>. $U = \frac{1}{2}C V^2$</li>
-</ol>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>An electron and a proton are each released from rest in the same uniform electric field. The electron moves a distance $d_{electron}$ and the proton moves a distance $d_{proton}$ as each particle's kinetic energy increases by 1.6 eV. How do $d_{electron}$ and $d_{proton}$ compare?</p>
-<ol>
-<li>$d_{electron} < d_{proton}$</li>
-<li>$d_{electron} > d_{proton}$</li>
-<li>$d_{electron} = d_{proton}$</li>
-<li>The answer depends on the direction of the electric field. </li>
-</ol>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Which process will double the power given off by a resistor?</p>
-<ol>
-<li>doubling the current while doubling the resistance</li>
-<li>doubling the current by making a resistance half as big</li>
-<li>doubling the current by doubling the voltage</li>
-<li>doubling the current while making the voltage half as big</li>
-</ol>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>doubling the current by making a resistance half as big</strong></p>
-$$ P = I \, V = I^2 R = \frac{V^2}{R} $$
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Which is a unit of power?</p>
-<ol>
-<li>kWh</li>
-<li>W/s</li>
-<li>A $\cdot \Omega$</li>
-<li>J/s</li>
-</ol>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>A resistor is made of a material that has a resistivity that is proportional to the current going through it. If the voltage across the resistor is doubled, what happens to the power dissipated by it?</p>
-<ol>
-<li>It doubles.</li>
-<li>It quadruples</li>
-<li>It increases by a factor of $2^{3/2}$</li>
-<li>It increases by a factor of $2^{1/2}$</li>
-</ol>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>It increases by a factor of $2^{3/2}$</strong></p>
-$$ R = \rho \frac{l}{A}$$<p>If $\rho \propto I $
-$$ V \propto I^2 \, \text{or } I \propto \sqrt{V} \text{ and } P = I^2 R \propto I^3$$</p>
-<p>So if V is doubled we get $I = \sqrt{2} I_0$ and $P \propto (\sqrt{2} I)^3$</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>A potential difference of 1.00 V is maintained across a
-10.0-V resistor for a period of 20.0 s. What total charge
-passes by a point in one of the wires connected to
-the resistor in this time interval?</p>
-<ol>
-<li>200 C</li>
-<li>20 C</li>
-<li>2 C</li>
-<li>0.05C</li>
-</ol>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>2 C</strong></p>
-$$ I = \frac{dI}{dt}$$$$V = I R = \frac{Q}{\Delta t} R$$<p>Solve for Q</p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Magnetism">Magnetism<a class="anchor-link" href="#Magnetism">&#182;</a></h1><ul>
-<li>Practice Right hand rule</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>A proton is released such that its initial velocity is from right to left across this page. The proton’s path, however, is deflected in a direction toward the bottom edge of the page due to the presence of a
-uniform magnetic field. What is the direction of this field?</p>
-<ol>
-<li>Out of the page</li>
-<li>Into the page</li>
-<li>From bottom edge to top edge of the page</li>
-<li>From right to left across the page</li>
-</ol>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>into the page</strong></p>
-$$ \vec F \propto \vec v \times \vec B $$
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>A beam of electrons is sent in the positive x-direction in a region with a uniform magnetic field B in
-the positive y-direction and a uniform electric field E in the positive z-direction. At which of the following speeds would the electrons be deflected in the positive z-direction?</p>
-<ol>
-<li>$v < E/B$</li>
-<li>$v = E/B$</li>
-<li>$v > E/B$</li>
-<li>There is no speed for which this will happen</li>
-</ol>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>There is no speed for which this will happen</strong></p>
-<p>It is an electron.</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Two long, parallel wires carry currents of $I_1= I_0$ and $I_2 = 2 I_0$  in the directions indicated in Figure. (a) In what direction is the magnetic field at</p>
-<p><img src="biot1.png" alt="Mountain View" style="height:428px;"></p>
-<ol>
-<li>A point midway between the wires.</li>
-<li>At point P</li>
-</ol>
 
 </div>
 </div>

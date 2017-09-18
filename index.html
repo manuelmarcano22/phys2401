@@ -11927,101 +11927,13 @@ a.anchor-link {
 
 </div>
 </div>
-</div></section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Vectors">Vectors<a class="anchor-link" href="#Vectors">&#182;</a></h2><ul>
-<li>Representation:</li>
-</ul>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-$$ \vec A = A_x \hat x + A_y \hat y =  A_x \hat{i} + A_y \hat j $$
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Magnitude of a vector</li>
-</ul>
-
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-$$ | \vec A | = \sqrt{A_x ^2 + A_y ^2} $$
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Adding vectors: $\vec C = \vec A + \vec B$</li>
-</ul>
-
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-$$ \vec C = (A_x + B_x) \hat x + (A_y + B_y) \hat y $$
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Multiply vectors:</li>
-</ul>
-
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Two way of multiplying: 
-$$ \vec A \cdot \vec B \neq \vec A \times \vec B$$</li>
-</ul>
-
-</div>
-</div>
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Chapter-23:-Electric-Field">Chapter 23: Electric Field<a class="anchor-link" href="#Chapter-23:-Electric-Field">&#182;</a></h1>
+<h1 id="Chapter-24:-Gauss's-Law">Chapter 24: Gauss's Law<a class="anchor-link" href="#Chapter-24:-Gauss's-Law">&#182;</a></h1>
 </div>
 </div>
 </div></section><section>
@@ -12030,7 +11942,7 @@ $$ \vec A \cdot \vec B \neq \vec A \times \vec B$$</li>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Electric-field-and-forces-are-vectors">Electric field and forces are vectors<a class="anchor-link" href="#Electric-field-and-forces-are-vectors">&#182;</a></h1>
+<h1 id="Electric-flux-and-charges">Electric flux and charges<a class="anchor-link" href="#Electric-flux-and-charges">&#182;</a></h1>
 </div>
 </div>
 </div><div class="fragment">
@@ -12040,33 +11952,8 @@ $$ \vec A \cdot \vec B \neq \vec A \times \vec B$$</li>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Electric Field due to a charge:
-  $$\vec E = k_e \frac{q}{r^2} \hat r $$</li>
-</ul>
-
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Coulomb's law:
-$$ \vec F_{12} = k_e \frac{q_1 q_2}{r^2}\hat r _{12} $$</li>
-</ul>
-
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>$\vec F = q \vec E$</li>
+<li>Electric Flux: 
+  $$\Phi _E \equiv \int _{\text{surface}} \vec E \cdot d \vec A \equiv \int _{\text{surface}} \vec E \cdot \hat n \, dA $$</li>
 </ul>
 
 </div>
@@ -12077,10 +11964,25 @@ $$ \vec F_{12} = k_e \frac{q_1 q_2}{r^2}\hat r _{12} $$</li>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Superposition">Superposition<a class="anchor-link" href="#Superposition">&#182;</a></h1><p>The electric field due to a group of point
-charges can be obtained by using the <strong>superposition
-principle</strong>.</p>
-$$\vec E_i = k_e \sum _i  \frac{q_i}{r_i ^2} \hat r_i  $$
+<p><strong>Quick Quiz 24.1</strong>: Suppose a point charge is located at the center of a spherical
+surface. The electric field at the surface of the sphere and the total flux
+through the sphere are determined. Now the radius of the sphere is halved. What happens to the flux through the sphere and the magnitude of the electric
+field at the surface of the sphere? (a) The flux and field both increase.
+(b) The flux and field both decrease. (c) The flux increases, and the field
+decreases. (d) The flux decreases, and the field increases. (e) The flux remains
+the same, and the field increases. (f) The flux decreases, and the field remains
+the same.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>(e)The flux remains the same, and the field increases. </strong></p>
+$$ \Phi \propto  E \, A $$$$ E \propto \frac{1}{r^2} \text{  and  } A \propto r^2$$
 </div>
 </div>
 </div></section></section><section><section>
@@ -12089,77 +11991,17 @@ $$\vec E_i = k_e \sum _i  \frac{q_i}{r_i ^2} \hat r_i  $$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Your-Turn:">Your Turn:<a class="anchor-link" href="#Your-Turn:">&#182;</a></h1>
+<h1 id="Gauss's-Law">Gauss's Law<a class="anchor-link" href="#Gauss's-Law">&#182;</a></h1>
 </div>
 </div>
-</div><div class="fragment">
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>P.13</strong>: Two small beads having positive charges $q_1 = 3q$ and $q_2 = q$ are fixed at the opposite ends of a horizontal insulating rod of length $d = 1.50 m$. The bead with charge $q_1$ is at the origin. A third small, charged bead is free to slide on the rod. (a) At what position x is the third bead in equilibrium? (b) Can the equilibrium be stable? If the middle charge is negative, it will have an unstable equilibrium.  What does that mean?</p>
-<p><img src="13.png" alt=""></p>
-
-</div>
-</div>
-</div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Equilibrium:</li>
-</ul>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-$$ \vec F _{net} = \vec  F_{13} + \vec F_{23}  = 0$$
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-$$ \frac{k_e q_1 q_3}{r_1 ^2} = \frac{k_e q_2 q_3}{r_2 ^2}$$
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-$$ \frac{k_e 3 q q_3}{r_1 ^2} = \frac{k_e q q_3}{r_2 ^2}$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-$$\fbox {$d-x = \frac{x}{\sqrt{3}}$} $$
-</div>
-</div>
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>P.31:</strong>Three point charges are located on a circular arc (a) What is the total electric field at P, the center of the arc? (b) Find the electric force that would be exerted on a 25.00-nC point charge placed at P.</p>
-<p><img src="31.png" alt=""></p>
-<p><strong>Hint</strong>: Electric field is a <strong>vector</strong>. Use <strong>superposition</strong> to find $\vec E_{net}$</p>
+<p><strong>Gauss’s law</strong> says that the net electric flux $\phi_E$ through any closed gaussian surface is equal to the net charge $q_{in}$ inside the surface divided
+by $\epsilon_0$:</p>
 
 </div>
 </div>
@@ -12169,63 +12011,7 @@ $$\fbox {$d-x = \frac{x}{\sqrt{3}}$} $$
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>$\vec E$ for top charge:</li>
-</ul>
-$$\vec E_{top} = \frac{k_e q_{top}}{r^2}\cos (\theta) \hat x + \frac{k_e q_{top}}{r^2}\sin (\theta) {(-\hat y)} $$
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>$\vec E$ for middle neg charge:</li>
-</ul>
-
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-$$\vec E_{middle} = \frac{k_e q_{mid}}{r^2} (- \hat x) + 0 \hat y  $$
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>$\vec E$ bottom charge:</li>
-</ul>
-$$\vec E_{top} = \frac{k_e q_{bot}}{r^2}\cos (\theta) \hat x + \frac{k_e q_{bot}}{r^2}\sin (\theta) {\hat y} $$
-</div>
-</div>
-</div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-$$ \vec E_{net} = \vec E _{top} + \vec E_{middle} + \vec E_{bot}$$$$ \vec E_{net} = \left ( \frac{k_e q_{top}}{r^2}\cos (\theta) - \frac{k_e q_{mid}}{r^2} + \frac{k_e q_{bot}}{r^2}\cos (\theta) \right ) \hat x$$$$ + \left ( \frac{k_e q_{top}}{r^2}\sin (\theta) + 0 - \frac{k_e q_{bot}}{r^2}\sin (\theta)   \right ) \hat y $$
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>What will be the general direction of electric field at point P if the upper positive charge is larger than the lower positive charge?</p>
-<p><img src="31.png" alt=""></p>
-
+$$\Phi_E = \oint \vec E \cdot d \vec A = \frac{q_{\text{in}}}{\epsilon_0}$$
 </div>
 </div>
 </div></section></section><section><section>
@@ -12234,8 +12020,8 @@ $$ \vec E_{net} = \vec E _{top} + \vec E_{middle} + \vec E_{bot}$$$$ \vec E_{net
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>P.49</strong>:(a)  Determine the ratio $q_1/q_2$. (b) What are the signs of $q_1$ and $q_2$?</p>
-<p><img src="49.png" alt=""></p>
+<p><strong>P.18:</strong> . Find the net electric flux through (a) the closed spherical surface in a uniform electric field shown below and (b) the closed cylindrical surface shown in (c) What can you conclude about the charges, if any, inside the cylindrical surface?</p>
+<p><img src="p18.png" alt=""></p>
 
 </div>
 </div>
@@ -12245,10 +12031,89 @@ $$ \vec E_{net} = \vec E _{top} + \vec E_{middle} + \vec E_{bot}$$$$ \vec E_{net
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The number of lines drawn leaving a positive charge or approaching a negative charge is proportional to the magnitude of the charge.</p>
-<ul>
-<li>6 out of 18 reach $q_1$. Three lines leave $q_2$ per line that reach $q_1$</li>
+<h3 id="Part-a">Part a<a class="anchor-link" href="#Part-a">&#182;</a></h3><p>a) <strong>Sphere:</strong> $\Phi _E =0$. The number of field lines entering the surface equals the number leaving the surface.</p>
+<p><strong>Cylinder:</strong> $\Phi _E = 2 E  A = 2 E  \pi R^2$. Twice the ara</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Part B</strong></p>
+$$Q_{sphere} =0 $$$$2 E A = \frac{Q_{in}}{\epsilon_0}$$<p>so:</p>
+$$ Q_{cylinder} =  2 E  \pi R^2 \epsilon_0$$
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>P.55</strong>: A solid insulating sphere of radius $a = 5.00$ cm carries a net positive charge of $Q = 3.00 \mu C$ <strong>uniformly distributed</strong> throughout its volume. Concentric with this sphere is a conducting spherical shell with inner radius $b = 10.0$ cm and outer radius $c = 15.0$ cm as shown below having net charge $q = 21.00 \mu C$. Prepare a graph of the magnitude of the electric field due to this configuration versus $r$ for $0 < r < 25.0 $cm.</p>
+<p><img src="p55.png" alt=""></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>Region $r<a$</h2>
+<p>Draw gaussian surface $r<a$:</p>
+<p>$$ \rho = \frac{Q_{total}}{V_{total}} = \frac{Q_{gaussian}}{V_{gaussian}}$$
+ $$\frac{Q}{\frac{4}{3}\pi a^3} =\frac{Q_{in}}{\frac{4}{3}\pi r^3}  $$</p>
+<p>Apply Gauss's law:</p>
+$$\oint \vec E \cdot d \vec A = E(4 \pi r^2) = \frac{Q_{in}}{\epsilon_0}   $$$$ \vec E = \frac{Q r}{4 \pi a^3 \epsilon_0 } \hat r $$
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Region-$b-&gt;-r-&gt;-a$">Region $b &gt; r &gt; a$<a class="anchor-link" href="#Region-$b-&gt;-r-&gt;-a$">&#182;</a></h2><ul>
+<li>Gauss's Law:</li>
 </ul>
+$$\oint \vec E \cdot d \vec A = E(4 \pi r^2) = \frac{Q_{in}}{\epsilon_0}   $$$$ \vec E = \frac{Q_{insulator}}{4 \pi \epsilon _0 r^2} \hat r $$
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Region-$c-&gt;-r-&gt;-b$">Region $c &gt; r &gt; b$<a class="anchor-link" href="#Region-$c-&gt;-r-&gt;-b$">&#182;</a></h2><p>A conductor in electrostatic equilibrium has the following property: 1. The <strong>electric field is zero</strong> everywhere inside the conductor, whether
+the conductor is solid or hollow.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Region-$-r-&gt;-c$">Region $ r &gt; c$<a class="anchor-link" href="#Region-$-r-&gt;-c$">&#182;</a></h2><ul>
+<li>Gauss's Law:</li>
+</ul>
+$$\oint \vec E \cdot d \vec A = E(4 \pi r^2) = \frac{Q_{in}}{\epsilon_0}   $$$$ \vec E = \frac{Q_{insulator}- Q_{conductor}}{4 \pi \epsilon _0 r^2} \hat r $$
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="p552.png" alt=""></p>
 
 </div>
 </div>

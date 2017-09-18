@@ -1,0 +1,33 @@
+1) A charge, $+Q$, is placed inside a balloon and the balloon is inflated. As the radius of the balloon r increases the number of field lines going through the surface of the balloon:
+
+a. increases proportional to $r^2$
+b. increases proportional to $r$
+c. stays the same
+d. decreases as $1/r$
+
+
+2) The electric flux $\Phi_E$ is equivalent dimensionally to which of the following?
+
+a. $N \times m^2/C$
+b. $N/C$
+c. $N \times m^2/C^2$
+d. $N/C^2$
+
+
+
+3) A closed surface contains the following point charges: 6 C, 4 C, –2 C, –4 C. The electric flux coming out of the surface is:
+
+a. 16 $C/\epsilon_0$
+b. -16 $C/\epsilon_0$
+c. 4 $C/\epsilon_0$
+d. -4 $C/\epsilon_0$
+
+
+
+4) A spherical surface surrounds a point charge it its center. If the charge is doubled and if the radius of the surface is also doubled, what happens to the electric flux $\Phi_E$ out of the surface and the magnitude $|\vec E|$ of the electric field at the surface as a result of these doublings? 
+
+a. $\Phi _E$ and E do not change
+b. $\Phi _E$ and E remains the same
+c. $\Phi _E$ and E decreases
+d. $\Phi _E$ and E increases
+

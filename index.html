@@ -11933,7 +11933,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Chapter-24:-Gauss's-Law">Chapter 24: Gauss's Law<a class="anchor-link" href="#Chapter-24:-Gauss's-Law">&#182;</a></h1>
+<h1 id="Chapter-25:-Electric-Potential">Chapter 25: Electric Potential<a class="anchor-link" href="#Chapter-25:-Electric-Potential">&#182;</a></h1>
 </div>
 </div>
 </div></section><section>
@@ -11942,7 +11942,49 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Electric-flux-and-charges">Electric flux and charges<a class="anchor-link" href="#Electric-flux-and-charges">&#182;</a></h1>
+<p>Electric potential is a measure of <strong>potential energy per unit charge</strong></p>
+$$ V = \frac{U}{q}$$$$ V \equiv \frac{\Delta U}{q} = - \int \vec E \cdot d \vec s$$
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+$$ 1 V \equiv 1 J/C $$
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+$$1 \, N/C = 1 \, V/m $$
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Point-Charge">Point Charge<a class="anchor-link" href="#Point-Charge">&#182;</a></h1><p>If we define $V = 0$ at $r = \infty$ , the electric potential due
+to a point charge at any distance r from the charge is:</p>
+$$ V = k_e \frac{q}{r}$$<p>The electric potential associated with a group of point
+charges is obtained by summing the potentials due to
+the individual charges.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Continuous-Charge-distribution">Continuous Charge distribution<a class="anchor-link" href="#Continuous-Charge-distribution">&#182;</a></h1>
 </div>
 </div>
 </div><div class="fragment">
@@ -11952,10 +11994,10 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Electric Flux: 
-  $$\Phi _E \equiv \int _{\text{surface}} \vec E \cdot d \vec A \equiv \int _{\text{surface}} \vec E \cdot \hat n \, dA $$</li>
+<li>The electric potential due to a continuous charge distribution
+is:</li>
 </ul>
-
+$$ V = k_e \int \frac{dq}{r}$$
 </div>
 </div>
 </div></div></section><section>
@@ -11964,25 +12006,17 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Quick Quiz 24.1</strong>: Suppose a point charge is located at the center of a spherical
-surface. The electric field at the surface of the sphere and the total flux
-through the sphere are determined. Now the radius of the sphere is halved. What happens to the flux through the sphere and the magnitude of the electric
-field at the surface of the sphere? (a) The flux and field both increase.
-(b) The flux and field both decrease. (c) The flux increases, and the field
-decreases. (d) The flux decreases, and the field increases. (e) The flux remains
-the same, and the field increases. (f) The flux decreases, and the field remains
-the same.</p>
+<p><img src="p47.png" alt=""></p>
 
 </div>
 </div>
-</div></section><section>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(e)The flux remains the same, and the field increases. </strong></p>
-$$ \Phi \propto  E \, A $$$$ E \propto \frac{1}{r^2} \text{  and  } A \propto r^2$$
+$$ V = k_e \int ^{-R} _{-3R} \frac{\lambda dx}{-x} + k_e \int ^{\pi} _{0} \frac{\lambda R d\theta}{R} + k_e \int ^{3R} _{R} \frac{\lambda dx}{x}  $$$$ = k_e \lambda (\pi + 2 \ln 3 )$$
 </div>
 </div>
 </div></section></section><section><section>
@@ -11991,139 +12025,19 @@ $$ \Phi \propto  E \, A $$$$ E \propto \frac{1}{r^2} \text{  and  } A \propto r^
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Gauss's-Law">Gauss's Law<a class="anchor-link" href="#Gauss's-Law">&#182;</a></h1>
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Gauss’s law</strong> says that the net electric flux $\phi_E$ through any closed gaussian surface is equal to the net charge $q_{in}$ inside the surface divided
-by $\epsilon_0$:</p>
+<p>A rod of Lenght L lies along the x axis with its left ened at the origin. It has a nonuniform charge density $\lambda = \alpha x$, where $\alpha$ is a positive constant. (a) What are the units of $\alpha$? (b) Calculate the electric potential at A.</p>
+<p><img src="p45.png" alt=""></p>
 
 </div>
 </div>
-</div></section><section>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-$$\Phi_E = \oint \vec E \cdot d \vec A = \frac{q_{\text{in}}}{\epsilon_0}$$
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>P.18:</strong> . Find the net electric flux through (a) the closed spherical surface in a uniform electric field shown below and (b) the closed cylindrical surface shown in (c) What can you conclude about the charges, if any, inside the cylindrical surface?</p>
-<p><img src="p18.png" alt=""></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Part-a">Part a<a class="anchor-link" href="#Part-a">&#182;</a></h3><p>a) <strong>Sphere:</strong> $\Phi _E =0$. The number of field lines entering the surface equals the number leaving the surface.</p>
-<p><strong>Cylinder:</strong> $\Phi _E = 2 E  A = 2 E  \pi R^2$. Twice the area</p>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Part B</strong></p>
-$$Q_{sphere} =0 $$$$2 E A = \frac{Q_{in}}{\epsilon_0}$$<p>so:</p>
-$$ Q_{cylinder} =  2 E  \pi R^2 \epsilon_0$$
-</div>
-</div>
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>P.55</strong>: A solid insulating sphere of radius $a = 5.00$ cm carries a net positive charge of $Q = 3.00 \mu C$ uniformly distributed throughout its volume. Concentric with this sphere is a conducting spherical shell with inner radius $b = 10.0$ cm and outer radius $c = 15.0$ cm as shown below having net charge $q = 21.00 \mu C$. Prepare a graph of the magnitude of the electric field due to this configuration versus $r$ for $ 0 < r < 25.0 $cm.</p>
-<p><img src="p55.png" alt=""></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2>Region   $r <a $</h2>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Draw gaussian surface $r<a$:</p>
-<p>$$ \rho = \frac{Q_{total}}{V_{total}} = \frac{Q_{gaussian}}{V_{gaussian}}$$
- $$\frac{Q}{\frac{4}{3}\pi a^3} =\frac{Q_{in}}{\frac{4}{3}\pi r^3}  $$</p>
-<p>Apply Gauss's law:</p>
-$$\oint \vec E \cdot d \vec A = E(4 \pi r^2) = \frac{Q_{in}}{\epsilon_0}   $$$$ \vec E = \frac{Q r}{4 \pi a^3 \epsilon_0 } \hat r $$
-</div>
-</div>
-</div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Region-$b-&gt;-r-&gt;-a$">Region $b &gt; r &gt; a$<a class="anchor-link" href="#Region-$b-&gt;-r-&gt;-a$">&#182;</a></h2><ul>
-<li>Gauss's Law:</li>
-</ul>
-$$\oint \vec E \cdot d \vec A = E(4 \pi r^2) = \frac{Q_{in}}{\epsilon_0}   $$$$ \vec E = \frac{Q_{insulator}}{4 \pi \epsilon _0 r^2} \hat r $$
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Region-$c-&gt;-r-&gt;-b$">Region $c &gt; r &gt; b$<a class="anchor-link" href="#Region-$c-&gt;-r-&gt;-b$">&#182;</a></h2><p>A conductor in electrostatic equilibrium has the following property: 1. The <strong>electric field is zero</strong> everywhere inside the conductor, whether
-the conductor is solid or hollow.</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Region-$-r-&gt;-c$">Region $ r &gt; c$<a class="anchor-link" href="#Region-$-r-&gt;-c$">&#182;</a></h2><ul>
-<li>Gauss's Law:</li>
-</ul>
-$$\oint \vec E \cdot d \vec A = E(4 \pi r^2) = \frac{Q_{in}}{\epsilon_0}   $$$$ \vec E = \frac{Q_{insulator}- Q_{conductor}}{4 \pi \epsilon _0 r^2} \hat r $$
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="p552.png" alt=""></p>
-
+$$ V = \int _0 ^L \frac{k_e \alpha x}{d+x} dx $$<p>Do $u = d+x$ or replace $\frac{x}{d+x} = 1 - \frac{d}{d+x}$</p>
+$$ V = k_e \alpha \left ( L - d \ln \left ( \frac{d+L}{d} \right ) \right ) $$
 </div>
 </div>
 </div></section></section><section><section>

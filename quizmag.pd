@@ -10,7 +10,9 @@
 <ol start="3" style="list-style-type: decimal">
 <li>When the velocity of a charged particle is perpendicular to a <strong>uniform magnetic field</strong>, the particle moves in a circular path in a plane perpendicular to <span class="math inline">$\vec B$</span>. Consider the following situation: Two particles of the same charge enter a magnetic field with the same speed. Which one has the bigger mass? This is the basic idea behing a mass spectrometer.</li>
 </ol>
+<p>adfa <img src="./circ.png" width="400" /></p>
 <p></p>
 <p><strong>Bonus question</strong></p>
 <p>Show that the radius of the circular path is proportional to the linear momentum, and inversely proportional to the magnitude of the charge and to the magnitude of the magnetic field.</p>
 <p><br /><span class="math display">$$R = \frac{m v}{qB}$$</span><br /></p>
+<p>What is the period T?</p>

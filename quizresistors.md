@@ -9,7 +9,7 @@ output: pdf_document
 a. zero and zero.
 b. infinite and infinite.
 c. zero and infinite.
-d. infinite and zero
+d. **infinite and zero**
 
 
 \vspace{.2 cm}
@@ -17,7 +17,7 @@ d. infinite and zero
 
 2) Three resistors, each with resistance $R_1$, are in series in a circuit. They are replaced by one equivalent resistor, R. Comparing this resistor to the first resistor of the initial circuit, which of the following is true?
 
-a. The current through R equals the current through $R_1$.
+a. **The current through R equals the current through $R_1$.**
 b. The voltage across R equals the voltage across $R_1$.
 c. The power given off by R equals the power given off by $R_1$.
 d. R is less than $R_1$.
@@ -29,7 +29,7 @@ d. R is less than $R_1$.
 
 a. $R_1$
 b. $R_2$
-c. $R_3$
+c. $\mathbf{R_3}$
 d. All are equal in power dissipation
 
 \vspace{1 cm}
@@ -38,7 +38,7 @@ d. All are equal in power dissipation
 statements is true?
 
 a. The current through R equals the current through $R_1$.
-b. The voltage across R equals the voltage across $R_1$.
+b. **The voltage across R equals the voltage across $R_1$.**
 c. The power given off by R equals the power given off by $R_1$.
 d. R is greater than $R_1$.
 
@@ -47,7 +47,7 @@ d. R is greater than $R_1$.
 5)Three resistors, each of different value, are used in a circuit with a power source supplying 12 volts. For which of the following resistor combinations is the total power supplied the greatest?
 
 a. all three resistors in series
-b. all three resistors in parallel
+b. **all three resistors in parallel**
 c. two of the resistors in parallel with the third resistor in series with the parallel pair
 d. This cannot be found until it is known which resistor is in series with the parallel pair.
 
@@ -58,6 +58,6 @@ d. This cannot be found until it is known which resistor is in series with the p
 
 a. Both rules are based on the conservation of charge.
 b. Both rules are based on the conservation of energy.
-c. The junction rule is based on the conservation of charge, and the loop rule is based on the conservation of energy.
+c. **The junction rule is based on the conservation of charge, and the loop rule is based on the conservation of energy.**
 d. The junction rule is based on the conservation of energy, and the loop rule is based on the conservation of charge.
 

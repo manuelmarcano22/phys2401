@@ -1,0 +1,16 @@
+<div class="figure">
+<img src="./ch29e3.png" width="400" />
+
+</div>
+<p></p>
+<ol start="2" style="list-style-type: decimal">
+<li>A proton with initial kinetic energy E is moving in circular motion in a uniform magnetic field. When it has completed one eighth of a revolution, what is its kinetic energy?</li>
+</ol>
+<p></p>
+<ol start="3" style="list-style-type: decimal">
+<li>When the velocity of a charged particle is perpendicular to a <strong>uniform magnetic field</strong>, the particle moves in a circular path in a plane perpendicular to <span class="math inline">$\vec B$</span>. Consider the following situation: Two particles of the same charge enter a magnetic field with the same speed. Which one has the bigger mass? This is the basic idea behing a mass spectrometer.</li>
+</ol>
+<p></p>
+<p><strong>Bonus question</strong></p>
+<p>Show that the radius of the circular path is proportional to the linear momentum, and inversely proportional to the magnitude of the charge and to the magnitude of the magnetic field.</p>
+<p><br /><span class="math display">$$R = \frac{m v}{qB}$$</span><br /></p>

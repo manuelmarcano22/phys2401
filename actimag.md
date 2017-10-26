@@ -1,5 +1,5 @@
 ---
-geometry: "left=3cm,right=3cm,top=2cm,bottom=1cm"
+geometry: "left=3cm,right=3cm,top=1cm,bottom=1cm"
 output: pdf_document
 ---
 
@@ -23,6 +23,8 @@ $$ \vec F_B = I \vec L \times \vec B    $$
 where $\vec L$ is a vector that points in the direction of the current I and has a magnitude equal to the length L of the segment. In general: **the net magnetic force acting on any closed current loop in a uniform magnetic field is zero.**
 
 ### Direction
+
+![](./rh.png){ width=100px }
 
 ![](./rirule.png){ width=700px }
 

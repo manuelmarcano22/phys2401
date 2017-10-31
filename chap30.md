@@ -22,6 +22,13 @@ The magnitude of the magnetic field at a distance r from a long, straight wire c
  B = \frac{\mu_0 I}{2 \pi r} 
  \end{equation}
 
+
+### The direction:
+
+Grasp the element in your right hand with your extended thumb pointing in the direction of the current. Your finger will then naturally curl around in the direction of the magnetic field lines due to that element. 
+
+![](./currents.png){width=300px}
+
 ## Magnetic Force Between Two Parallel Conductor
 
 The field $\vec B_2$ due to the current in wire 2 exerts a magnetic force of magnitude $F_1 = I_1 l B_2$
@@ -34,15 +41,14 @@ $$ F_1 = I_1 l B_2 = I_1 l (\frac{\mu_0 I_2}{2 \pi a}) = \frac{\mu _0 I_1 I_2}{2
 
 ## Exercises
 
-A long, straight wire carries a current I. A right-angle bend is made in the middle of the wire. The bend forms an arc of a circle of radius r. Determine the magnetic field at point P, the center of the arc. 
+A long, straight wire carries a current I. A right-angle bend is made in the middle of the wire. The bend forms an arc of a circle of radius r. Determine the magnetic field at point P, the center of the arc. **Answer: $\frac{\mu _0 I}{2r}\left ( \frac{1}{\pi}+ \frac{1}{4}\right )$**
 
-![](./bend.png){ width=200px }
-
+![](./bend.png){ width=200px } ![](./center.png){width=200px}
 
 \vspace{7 cm}
 
 
-2) In the figure below the current in the long, straight wire is $I_1$ and the wire lies in the plane of a rectangular loop, which carries a current $I_2$. The loop is of lenght $l$ and width $a$. Its left end is a distance $c$ from the wire. Find the magnitude and direction of the net force exerted on the loop by the magnetic field created by the wire. 
+2) In the figure below the current in the long, straight wire is $I_1$ and the wire lies in the plane of a rectangular loop, which carries a current $I_2$. The loop is of lenght $l$ and width $a$. Its left end is a distance $c$ from the wire. Find the magnitude and direction of the net force exerted on the loop by the magnetic field created by the wire. **Answer: $I_1 I_2 \mu_0 L (\frac{1}{2\pi c} - \frac{1}{2 \pi (c+a)})$**
 
 
 ![](./bend2.png){ width=200px }

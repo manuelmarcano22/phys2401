@@ -53,6 +53,8 @@ A person looking into an empty container is able to see the far edge of the cont
 
 $$\frac{h}{d} = \sqrt{\frac{n^2-1}{4-n^2}}$$
 
+b) For  what  range  of  values of  $n$ will the center of the coin not be visible for any  values of h and  d ?
+
 ![](fis.png){height=150px}
 
 ### Snell’s law in geometric optics
